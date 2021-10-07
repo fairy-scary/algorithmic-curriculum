@@ -36,8 +36,8 @@ let okrDailyResources = {
         "curriculumTitle": "TDD and OOP",
         "maintainter": "Alex Pezzati",
         "aACurriculum": ["https://open.appacademy.io/learn/js-py---aug-2021-cohort-1-online/week-4---tdd-and-oop/bejeweled-project--challenge-"],
-        "videos": [""],
-        "outsideResources": []
+        "videos": ["https://www.youtube.com/watch?v=O0EHKBi7iXU"],
+        "outsideResources": ["https://eloquentjavascript.net/"]
     },
 }
 

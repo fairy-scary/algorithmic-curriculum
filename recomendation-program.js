@@ -10,11 +10,14 @@ const recomendationObject = {
     "videos": [],
     "outsideResources": []
 }
-
+console.log(resourceObject)
 const recomend = () => {
     let remedialDates = [...student.studentProfile.yellowDates, ...student.studentProfile.redDates]
+    console.log(resourceObject.okrDailyResources.w4d4)
     remedialDates.forEach((date) => {
-        let aAcurriculumArray = resourceObject.okrDailyResources.date.aACurriculum
+        let aAcurriculumKeyString = `resourceObject.okrDailyResources.${date}.aACurriculum`
+        console.log(aAcurriculumArray)
+        //tried just interpolating date
         let videosArray = resourceObject.okrDailyResources.date.videosArray
         let outsideResourcesArray = resourceObject.okrDailyResources.date.outsideResources
         //date always at array.length - 0 in nested array
@@ -25,6 +28,8 @@ const recomend = () => {
         recomendationObject.outsideResources.push(outsideResourcesArray)
         recomendationObject.outsideResources.push(date)
     })
+
+    return recomendationObject
 }
 
 recomend()
