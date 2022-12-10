@@ -1,5 +1,6 @@
 # Algorithmic Curriculum 
-Project to provide students with remedial materials based on nightly reports 
+Classification algorithm(written in Javascript) to provide students with a styled feed of remedial curriculum and outside resources based on submitted fields from nightly progress reports and a resource api maintained by instructors.
 
-## Student-Side
-Student profile builder program invoked when nightly report submitted and uses r,y,g, or w feedback to okrSort instance method in the ReprtData class
+## Output:
+Student profile builder program invoked when nightly report submitted. Red, yellow, green, or white coded feedback sent to okrSort instance method in the ReprtData class. Implementing report instances as days of the week aligns data with mon-fri curriculum format to make recomendations.
+Recomendation program builds a resource object with seed data in example, but would be implemented to work with the api updated by maintainers. 
